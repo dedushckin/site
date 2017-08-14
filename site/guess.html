@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Угадайка</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript">
+        function Max(a, b, c, resOut)
+        {
+            var n1 = parseFloat(document.getElementById(a).value);
+            var n2 = parseFloat(document.getElementById(b).value);
+            var n3 = parseFloat(document.getElementById(c).value);
+            var res;
+            if ((n1 > n2) && (n1 > n3))
+            {
+                res = n1;
+            }
+            else
+            {
+                if (n2 > n3)
+                {
+                    res = n2;
+                }
+                else
+                {
+                    res = n3;
+                }
+            }
+            document.getElementById(resOut).value = res;
+        }
+    </script>
+</head>
+<body>
+<h2>Угадайка</h2>
+<div class="box">
+    <p>a = <input type="text" id='Num1'></p>
+    <p>b = <input type="text" id="Num2"></p>
+    <p>c = <input type="text" id="Num3"></p>
+
+    <p><input type="button"
+              value="Показать максимальное число"
+              onclick ="Max('Num1', 'Num2', 'Num3', 'outputResult')"></p>
+    <p>r = <input type="text" id="outputResult"></p>
+
+    <div class="carouse_l">
+        <a href="index.html"> < </a>
+    </div>
+
+    <div class="carouse_2">
+        <a href="vklad.html"> > </a>
+    </div>
+
+    <div class="menu">
+        <a href="index.html">Главная</a><span>/</span>
+        <a href="#">Угадайка</a><span>/</span>
+        <a href="vklad.html">Вклад</a>
+    </div>
+</div>
+<div class="footer">
+    Copyright &copy Петруня,
+</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+html {
+    margin: 0;
+    padding: 0;
+    background: url("http://digital.bnint.com/filelib/s9/photos/white_wood_4500x3000_lo_res.jpg");
+}
+
+.body, h2 {
+    text-align: center;
+}
+
+.box{
+    background-image: url("http://ozgurogluinsaat.com/resimler/slayt/2/zemin.jpg");
+    margin-top: 100px;
+    padding: 70px;
+    font-size: 20px;
+}
+
+.menu, p {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.menu, a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.carouse_l {
+    background: rgba(52, 37, 251, 0.25);
+    width: 20px;
+    text-align: center;
+    border-radius: 50%;
+    left: 2%;
+    position: absolute;
+    flex-direction: row-reverse;
+    padding: 10px;
+}
+
+.carouse_2 {
+    background: rgba(52, 37, 251, 0.25);
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
+
+    right: 2%;
+    position: absolute;
+    padding: 10px;
+    flex-direction: row-reverse;
+}
+
+.footer {
+    background: #909090;
+    height: 50px;
+    bottom: 0;
+    position: absolute;
+    width: 99%;
+    font-size: 20px;
+    text-align: center;
+
+}

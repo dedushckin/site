@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Вклад</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h2>Вклад</h2>
+<div class="box">
+    <script>
+        var vklad = parseInt(prompt('Введите сумму вклада', ''));
+        var rost = 1 + parseInt(prompt('Введите годовой процент', '')) / 100;
+        var time = [
+                '1 год',
+                '2 года',
+                '3 года',
+                '4 года',
+                '5 лет'
+        ];
+        for (var a = 0; a < 5; a++)
+        {
+            vklad = parseInt(vklad * rost);
+            document.write('Через ' + time [a] + ' на вашем счету будет \t' + vklad + '<br />' )
+        }
+
+    </script>
+
+    <div class="carouse_l">
+
+        <a href="guess.html"> < </a>
+    </div>
+
+    <div class="carouse_2">
+        <a href="index.html"> > </a>
+
+    </div>
+
+    <div class="menu">
+        <a href="index.html">Главная</a><span>/</span>
+        <a href="guess.html">Угадайка</a><span>/</span>
+        <a href="#">Вклад</a>
+    </div>
+</div>
+<div class="footer">
+    Copyright &copy Петруня,
+</div>
+</body>
+</html>

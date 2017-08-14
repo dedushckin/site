@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Угадай число</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+
+</head>
+<body>
+<h2>Главная</h2>
+
+<div class="box">
+    <script>
+        var min = 1;
+        var max = 100;
+        var guessNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+        document.write("Компьютер загадал число от" +min+" до " +max + ".Угадайте его за 7 попыток <br>");
+        var tryCount = 0;
+        var userAnswer;
+        do
+        {
+            tryCount = tryCount + 1;
+            userAnswer = +prompt(tryCount + "попытка. Ваш вариант:");
+            document.write(guessNumber + "");
+
+            if(userAnswer > guessNumber)
+                document.write("<b> Перелет</b><br />");
+            if(userAnswer < guessNumber)
+                document.write("<strong>Недолёт</strong><br />");
+        }
+        while (userAnswer!=guessNumber && tryCount < 7);
+        if(userAnswer==guessNumber)
+            document.write("<p>Поздравляем! Вы угадали!</p>");
+        else document.write("Вы проиграли! Попробуйте ещё раз!");
+    </script>
+
+    <div class="carouse_l">
+        <a href="vklad.html"> < </a>
+    </div>
+
+    <div class="carouse_2">
+        <a href="guess.html"> > </a>
+    </div>
+
+    <div class="menu">
+        <a href="#">Главная</a><span>/</span>
+        <a href="guess.html">Угадайка</a><span>/</span>
+        <a href="vklad.html">Вклад</a><br />
+    </div>
+</div>
+
+<div class="footer">
+    Copyright &copy Петруня,
+</div>
+
+</body>
+</html>
